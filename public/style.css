@@ -57,6 +57,17 @@ h2 {
   margin-top: 2rem;
 }
 
+/* Photos scale down to fit the column. */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 0 0 1.5rem;
+}
+
 /* Uses page: label/value list. The label column sizes to the
    longest label. */
 dl {
