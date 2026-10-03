@@ -1,3 +1,11 @@
+/* Google Sans Code, self-hosted. One variable file covers weights 300-800. */
+@font-face {
+  font-family: "Google Sans Code";
+  src: url("fonts/GoogleSansCode.woff2") format("woff2");
+  font-weight: 300 800;
+  font-display: swap;
+}
+
 /* Follow the system light/dark setting. */
 :root {
   color-scheme: light dark;
@@ -8,7 +16,7 @@ body {
   max-width: 40rem;
   margin: 0 auto;
   padding: 2rem 1rem;
-  font-family: system-ui, sans-serif;
+  font-family: "Google Sans Code", ui-monospace, SFMono-Regular, Menlo, monospace;
   line-height: 1.6;
 }
 
