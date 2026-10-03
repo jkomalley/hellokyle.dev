@@ -16,7 +16,7 @@ body {
   max-width: 40rem;
   margin: 0 auto;
   padding: 2rem 1rem;
-  font-family: "Google Sans Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: "Google Sans Code", monospace;
   line-height: 1.6;
 }
 
