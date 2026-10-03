@@ -20,14 +20,27 @@ body {
   line-height: 1.6;
 }
 
+/* Links use the text color; the underline marks them. */
+a {
+  color: inherit;
+}
+
 nav {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
 /* Pushes this link and everything after it to the right. */
 nav .push {
   margin-left: auto;
+}
+
+/* Logos in the nav, drawn in the text color. */
+.icon {
+  width: 1.25em;
+  height: 1.25em;
+  fill: currentColor;
 }
 
 /* The link for the page you're on. */
