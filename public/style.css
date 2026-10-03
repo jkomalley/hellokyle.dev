@@ -1,7 +1,9 @@
+/* Follow the system light/dark setting. */
 :root {
   color-scheme: light dark;
 }
 
+/* One centered, readable column. */
 body {
   max-width: 40rem;
   margin: 0 auto;
@@ -15,10 +17,12 @@ nav {
   gap: 1rem;
 }
 
+/* Pushes this link and everything after it to the right. */
 nav .push {
   margin-left: auto;
 }
 
+/* The link for the page you're on. */
 nav [aria-current] {
   font-weight: bold;
   text-decoration: none;
@@ -30,6 +34,39 @@ h1 {
 
 h2 {
   margin-top: 2rem;
+}
+
+/* Uses page: label/value list. The label column sizes to the
+   longest label. */
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.25rem 1.5rem;
+}
+
+dt {
+  opacity: 0.7;
+  text-align: right;
+}
+
+dd {
+  margin: 0;
+}
+
+/* Phone width: stack each label above its value. */
+@media (max-width: 30rem) {
+  dl {
+    grid-template-columns: 1fr;
+    row-gap: 0;
+  }
+
+  dt {
+    text-align: left;
+  }
+
+  dd {
+    margin-bottom: 0.75rem;
+  }
 }
 
 footer {
